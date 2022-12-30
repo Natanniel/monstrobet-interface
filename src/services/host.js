@@ -2,7 +2,7 @@
 //let host = "https://apolluz-api-vodhl.ondigitalocean.app/";
 // Production
 
-let host = "https://159.89.188.245:3000";
+let host = "https://159.89.188.245:3001";
 //let host = "http://localhost:3000";
 export default host;
 
