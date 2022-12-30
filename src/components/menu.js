@@ -23,10 +23,15 @@ function Menu({ }) {
 
     let [saldo, setSaldo] = useState(0)
 
-    useState(() => {
+    useState(async() => {
         let token = Cookies.get("login")
-        if (token)
+        if (token) {
             setJwt(token)
+            let dados = await api.get('usuario/dados')
+            //    console.log(dados.data)
+
+            setSaldo(dados.data.saldo)
+        }
     }, [])
 
     setInterval(async function () {
@@ -34,8 +39,8 @@ function Menu({ }) {
         if (jwt != "") {
             // console.log(jwt)
             let dados = await api.get('usuario/dados')
-        //    console.log(dados.data)
-        
+            //    console.log(dados.data)
+
             setSaldo(dados.data.saldo)
         }
 
