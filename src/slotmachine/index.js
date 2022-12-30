@@ -48,7 +48,7 @@ function Slotmachine() {
             setWinPrizeIndex1(res[0])
             setWinPrizeIndex2(res[1])
             setWinPrizeIndex3(res[2])
-         
+
         })
 
         socket.on("limparJogo", (res) => {
@@ -56,9 +56,12 @@ function Slotmachine() {
             setWinPrizeIndex1(0)
             setWinPrizeIndex2(0)
             setWinPrizeIndex3(0)
-            setApostando(0)
-            setTempoReportado(0)
-            setValorApostando(0)
+            setTimeout(function () {
+                setApostando(0)
+                setTempoReportado(0)
+                setValorApostando(0)
+            }, 2000)
+
         })
 
         socket.on("encerrarApostas", (res) => {
@@ -387,7 +390,7 @@ function Slotmachine() {
 
             {apostando == 1 ? (
                 <>
-                  <div className="progress mt-1 mb-1" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div className="progress mt-1 mb-1" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-bar bg-danger" style={{ width: tempoReportado + "0%" }}></div>
                     </div>
 

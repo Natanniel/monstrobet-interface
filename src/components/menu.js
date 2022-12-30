@@ -38,7 +38,7 @@ function Menu({ }) {
             setSaldo(dados.data.saldo)
         }
 
-    }, 5000)
+    }, 2000)
 
     let cadastrar = () => {
 
