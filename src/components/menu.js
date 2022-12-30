@@ -35,6 +35,7 @@ function Menu({ }) {
             // console.log(jwt)
             let dados = await api.get('usuario/dados')
         //    console.log(dados.data)
+        
             setSaldo(dados.data.saldo)
         }
 
