@@ -1,0 +1,8 @@
+.bg-dark{
+    background:#0f1923 !important;
+    border-bottom: 1px solid #323b45;
+}
+
+.btn-outline-light{
+    border: 1px solid #323b45 !important;
+}

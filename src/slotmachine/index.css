@@ -1,0 +1,20 @@
+.roulette-pro-regular-prize-item-wrapper {
+    background:#262f3c !important;
+    border:2px solid #fff !important;
+}
+
+.roulette-pro-wrapper{
+    border:1px solid #0f1923;
+    margin:2px;
+    border-radius: 5px;
+}
+
+.backgroundSecondary{
+    background:#262f3c
+}
+
+.prizeSelected{
+    border-color:#fff!important
+}
+
+/* Second #262f3c*/
