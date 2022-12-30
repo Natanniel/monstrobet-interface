@@ -87,6 +87,7 @@ function Menu({ }) {
                 window.location.reload();
             }, 2000)
         }).catch(function (e) {
+            console.log(e)
             alert(e.response.data.message)
         })
     }
