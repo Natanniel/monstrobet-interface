@@ -35,7 +35,7 @@ function Slotmachine() {
     let [tempoReportado, setTempoReportado] = useState(0)
 
     useEffect(() => {
-        const socket = socketIO.connect('https://159.89.188.245:3005');
+        const socket = socketIO.connect('http://159.89.188.245:3005');
         //const socket = socketIO.connect('http://localhost:3005');
         //  console.log(socket)
 
